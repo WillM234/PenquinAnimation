@@ -28,7 +28,7 @@ Debug.Log(newFootValue);
 public void ChangeBeakRotation()
 {
  float newBeakAngle = (beakSlider.value - 0.5f) * 360;
- Beak.transform.rotation =  Quaternion.Euler(0f,0f, (newBeakAngle * 360)) ;//new Vector3(0,0,newBeakAngle);
+ Beak.transform.rotation =  new Quaternion(0,0,1, newBeakAngle)  ;//new Vector3(0,0,newBeakAngle);
  Debug.Log(newBeakAngle);
 }
 }
