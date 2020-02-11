@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - floor
+  - deathFloor
+  - endFloor
   layers:
   - Default
   - TransparentFX
@@ -40,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: noncamera
+    uniqueID: 3732808263
+    locked: 0
+  - name: New Layer
+    uniqueID: 3425804389
     locked: 0
