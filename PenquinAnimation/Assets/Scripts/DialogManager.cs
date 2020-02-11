@@ -17,7 +17,7 @@ public class DialogManager : MonoBehaviour
     {
         sentences = new Queue<string>(); //create our queue from sentences  
     }
-    public void StartDialog(Dialog dialog)
+public void StartDialog(Dialog dialog)
 	{
         Debug.Log("talk to" + dialog.name);
         speakerName.text = dialog.name;

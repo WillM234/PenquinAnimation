@@ -12,7 +12,7 @@ public class NewPlayerMovement : MonoBehaviour
     Animator myAnimator; //reference to attached animator
 
     public bool isGrounded;//bool to tell if player is grounded or not for jumping and animations
-
+    public GameObject dialogPanel;
     public int jumpCount;//sets how many jumps the player can do
     public bool canJump;// bool that allows player to actually jump. Limits infinite jumping
 
@@ -79,6 +79,10 @@ public class NewPlayerMovement : MonoBehaviour
 		{
             canMove = false; 
 		}
+        /*if(dialogPanel.SetActive(true))
+        {
+            canMove = false;
+        }*/
 
     }
     void OnCollisionEnter2D(Collision2D platform)

@@ -19,7 +19,7 @@ public class onWhichPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     if(onPlatform == true)
+     if(onPlatform == true && beganDialog == false)
 		{
             startTalking();
 		}
